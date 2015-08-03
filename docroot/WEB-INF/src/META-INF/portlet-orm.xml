@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.test.model.impl.ProductModelImpl">
+		<attributes>
+			<id name="productId" />
+			<basic name="productName" />
+			<basic name="weight" />
+			<basic name="manufactureDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="dateOfSale">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="bakerName" />
+			<basic name="price" />
+			<basic name="office" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.test.model.impl.ProductImpl" name="Product">
+		<table name="sb_Product" />
+		<attributes />
+	</entity>
+</entity-mappings>

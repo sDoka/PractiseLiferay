@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.test.model.Product">
+		<field name="productId" type="long" />
+		<field name="productName" type="String" />
+		<field name="weight" type="int" />
+		<field name="manufactureDate" type="Date" />
+		<field name="dateOfSale" type="Date" />
+		<field name="bakerName" type="String" />
+		<field name="price" type="double" />
+		<field name="office" type="String" />
+	</model>
+</model-hints>
